@@ -1,0 +1,43 @@
+git config --global user.name "lee ju hyeong"
+git config --global core.editor vim
+git clone "주소명" gitsrc ?사이트에 있는 파일저장
+git remote -v? 원격저장소 리스트 보여줌
+git remote add "별명" "주소명"? 사이트에 업로드
+git push -u origin master ? 업로드
+pwd  ?자신의 위치
+cd 폴더명 ?현재 위치에서 거기로 들어감
+cd.. ?현재 위치에서 뒤로가기
+mkdir 폴더명 ?현재 위치에서 폴더를 만듬
+ls -al ?현재 위치에 있는 파일들의 목록을 보여줌
+git init ?현재위치를 작업할 위치로 결정
+
+vim 폴더명 ?파일 만들기 또는 수정
+i ?  -- INSERT -- 모드
+ESC ? 다시 명령어를 입력모드
+:wq ?입력상태 종료
+
+cat 파일명 ?파일에 있는 내용출력
+cp 파일명 새로만들파일명 ?복사해서 새로만듬
+git add 파일명 ?이 파일 버젼 커밋후보로 해
+git commit ?이 버젼의 정보저장
+git commit -a? add없이 버젼 정보저장
+git commit -m "커밋 메세지"? 에디터 안하고 메세지입력
+git commit -am "커밋메세지"?위에 둘다 합친거
+git log ?변경기록, q눌러서 화면탈출
+git log -p ?변경사항 나타냄
+git log --branches --decorate --graph --oneline?브렌치 모두 표시
+git diff ?수정한 후 봄
+git diff 커밋번호..커밋번호 ?두 커밋의 차이
+git merge 브렌치이름 ?현재 checkout한 브렌치를 기준으로 브렌치이름을 병합함
+git reset 커밋번호 --hard ?버젼을 되돌림
+git branch "이름" ?브렌치을 새로만듬
+git branch -d "이름"?브렌치를 삭제함
+git checkout "이름"?브렌치를 선택
+git checkout -b 이름 ?브렌치를 선택하고 만듬
+
+stash = add한것들을 임시로 저장하는것 
+git stash save? 변경 내용을 임시로 숨겨둠
+git stash list? 스태쉬 목록을 보여줌
+git stash pop?스태쉬 적용하고 삭제까지함
+git stash apply? 가장 최신 스태쉬 내용을 적용함
+git stash drop? 최신 스태쉬 삭제
